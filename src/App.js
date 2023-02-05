@@ -95,7 +95,7 @@ import KamaPage from "demos/KamaPage";
 // import LoginPage from "pages/Login.js";
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
-// import AboutUsPage from "pages/AboutUs.js";
+import AboutUsPage from "pages/AboutUs.js";
 // import ContactUsPage from "pages/ContactUs.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
