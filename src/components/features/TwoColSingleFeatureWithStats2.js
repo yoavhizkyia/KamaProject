@@ -25,13 +25,13 @@ const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight text-primary-500`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const Statistics = tw.div`flex flex-col items-center sm:block text-center md:text-left mt-4`;
 const Statistic = tw.div`text-left sm:inline-block sm:mr-12 last:mr-0 mt-4`;
 const Value = tw.div`font-bold text-lg sm:text-xl lg:text-2xl text-secondary-500 tracking-wide`;
-const Key = tw.div`font-medium text-primary-700`;
+const Key = tw.div`font-medium text-primary-500`;
 
 const DecoratorBlob = styled(SvgDotPattern)(props => [
   tw`w-20 h-20 absolute right-0 bottom-0 transform translate-x-1/2 translate-y-1/2 fill-current text-primary-500 -z-10`
@@ -41,7 +41,7 @@ export default ({
   subheading = "Our Track Record",
   heading = (
     <>
-      We have been doing this <wbr /> since <span tw="text-primary-500">1980.</span>
+      We have been doing this <wbr /> since <span tw="text-secondary-500">1980.</span>
     </>
   ),
   description = `Our mission is to serve our customers with providing the best possible engineering and field service and supply of the highest quality instruments to meet the needs of our customers in Chemical, Petrochemical, Power, Food & Beverage, Pharmaceutical and other Process Industries.
