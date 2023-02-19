@@ -33,9 +33,9 @@ const Paragraph = tw.p`max-w-md my-8 lg:my-5 lg:my-8 sm:text-lg lg:text-base xl:
 export default ({
   navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">About</NavLink>
+      <NavLink href="/aboutus">About</NavLink>
       <NavLink href="#">Manufacturers</NavLink>
-      <NavLink href="#">Contact</NavLink>
+      <NavLink href="/contact">Contact</NavLink>
       {/* <NavLink href="#">News</NavLink> */}
     </NavLinks>
   ],

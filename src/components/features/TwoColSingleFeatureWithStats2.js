@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import StatsIllustrationSrc from "images/factoryworker1.jpg";
+import StatsIllustrationSrc from "images/Mifal.jpg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 
 const Container = tw.div`relative`;
@@ -44,10 +44,6 @@ export default ({
       We have been doing this <wbr /> since <span tw="text-secondary-500">1980.</span>
     </>
   ),
-  description = `Our mission is to serve our customers with providing the best possible engineering and field service and supply of the highest quality instruments to meet the needs of our customers in Chemical, Petrochemical, Power, Food & Beverage, Pharmaceutical and other Process Industries.
-  KAMA Ltd. is a leading supplier of flow meters, control valves, level, pressure and temperature instruments, IS barriers and proximity switches, etc.
-  Our principals are world wide leaders in their respective field of manufacturing.
-  Our team boasts a combined experience of more than 100 man-years in control instrumentation.`,
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
   imageContainerCss = null,
@@ -87,7 +83,22 @@ export default ({
           <TextContent>
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
-            <Description>{description}</Description>
+            <Description>
+            <span>
+                <p>
+                Our mission is to serve our customers with providing the best possible engineering and field service and supply of the highest quality instruments to meet the needs of our customers in Chemical, Petrochemical, Power, Food & Beverage, Pharmaceutical and other Process Industries.
+                </p>
+                <p>
+                KAMA Ltd. is a leading supplier of flow meters, control valves, level, pressure and temperature instruments, IS barriers and proximity switches, etc.
+                </p>
+                <p>
+                Our principals are world wide leaders in their respective field of manufacturing.
+                </p>
+                <p>
+                Our team boasts a combined experience of more than 100 man-years in control instrumentation.
+                </p>
+              </span>  
+            </Description>
             <Statistics>
               {statistics.map((statistic, index) => (
                 <Statistic key={index}>

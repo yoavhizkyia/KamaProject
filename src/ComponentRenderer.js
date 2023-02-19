@@ -185,7 +185,7 @@ export const components = {
         FullWidthWithImage: {
           name: "Full Width With Image",
           component: FullWidthWithImageHero,
-          url: "/components/blocks/Hero/FullWidthWithImage",
+          url: "/",
         },
       }
     },
@@ -209,7 +209,7 @@ export const components = {
     //     },
     //   }
     // },
-    // Features: {
+    Features: {
     //   type: "Features Section",
     //   elements: {
     //     ThreeColWithSideImage: {
@@ -262,20 +262,20 @@ export const components = {
     //       component: WithStatsAndImageFeatures,
     //       url: "/components/blocks/Features/WithStatsAndImage",
     //     },
-    //     WithStatsAndImage2: {
-    //       name: "Stats With Image 2",
-    //       component: WithStatsAndImage2Features,
-    //       url: "/components/blocks/Features/WithStatsAndImage2",
-    //     },
+        WithStatsAndImage2: {
+          name: "Stats With Image 2",
+          component: WithStatsAndImage2Features,
+          url: "/aboutus",
+        },
     //     VerticalWithAlternateImageAndText: {
     //       name: "Vertical Feature Cards With Alternate Image and Text",
     //       component: VerticalWithAlternateImageAndTextFeatures,
     //       url: "/components/blocks/Features/VerticalWithAlternateImageAndText",
     //     },
     //   }
-    // },
+    },
 
-    // Cards: {
+    Cards: {
     //   type: "Cards",
     //   elements: {
     //     Slider: {
@@ -298,18 +298,18 @@ export const components = {
     //       component: ProfileThreeColGridCards,
     //       url: "/components/blocks/Cards/ProfileThreeColGrid",
     //     },
-    //     ThreeColContactDetails: {
-    //       name: "Three Column Contact Details Cards",
-    //       component: ThreeColContactDetailsCards,
-    //       url: "/components/blocks/Cards/ThreeColContactDetails",
-    //     },
+        ThreeColContactDetails: {
+          name: "Three Column Contact Details Cards",
+          component: ThreeColContactDetailsCards,
+          url: "/contact",
+        },
     //     Trending: {
     //       name: "Two Trending Preview Cards With Images",
     //       component: TrendingCards,
     //       url: "/components/blocks/Cards/Trending",
     //     },
     //   }
-    // },
+    },
 
     // Blog: {
     //   type: "Blog Section",
@@ -436,7 +436,7 @@ export const components = {
     //   }
     // },
 
-    // Footer: {
+    Footer: {
     //   type: "Footers Section",
     //   elements: {
     //     SimpleFiveColumn: {
@@ -454,18 +454,18 @@ export const components = {
     //       component: FiveColumnWithBackgroundFooter,
     //       url: "/components/blocks/Footer/FiveColumnWithBackground",
     //     },
-    //     FiveColumnDark: {
-    //       name: "Five Column Dark",
-    //       component: FiveColumnDarkFooter,
-    //       url: "/components/blocks/Footer/FiveColumnDark",
-    //     },
+        FiveColumnDark: {
+          name: "Five Column Dark",
+          component: FiveColumnDarkFooter,
+          url: "/footer",
+        },
     //     MiniCentered: {
     //       name: "Mini Centered Dark",
     //       component: MiniCenteredFooter,
     //       url: "/components/blocks/Footer/MiniCentered",
     //     },
     //   }
-    // }
+    }
   }
 }
 

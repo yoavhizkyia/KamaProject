@@ -3,12 +3,9 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import LogoImage from "images/logo-light.svg";
-import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
+import LogoImage from "images/kamafavicon.ico";
 
-const Container = tw.div`relative bg-gray-900 text-gray-100 -mx-8 -mb-8 px-8`;
+const Container = tw.div`relative bg-gray-200 text-gray-700 -mx-8 -mb-8 px-8`;
 const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8`
 const FiveColumns = tw.div`flex flex-wrap justify-between`;
 
@@ -39,7 +36,7 @@ const CopyrightAndCompanyInfoRow = tw.div`pb-0 text-sm font-normal flex flex-col
 const CopyrightNotice = tw.div``
 const CompanyInfo = tw.div``
 
-const Divider = tw.div`my-8 border-b-2 border-gray-800`
+const Divider = tw.div`my-16 border-b-2 border-gray-300 w-full`
 export default () => {
   return (
     <Container>
@@ -48,73 +45,52 @@ export default () => {
           <CompanyColumn>
             <LogoContainer>
               <LogoImg src={LogoImage} />
-              <LogoText>Treact Inc.</LogoText>
+              <LogoText>Kama Ltd.</LogoText>
             </LogoContainer>
             <CompanyAddress>
-              123 Road, New Startup Building
-              Carter Road, San Francisco
-              California 40234
+              <span>
+                <p>
+                  20 Hametsuda St.,
+                </p>
+                <p>
+                  Azor, Israel
+                </p>
+                <p>
+                  Azor 5800164
+                </p>
+              </span> 
             </CompanyAddress>
-            <SocialLinksContainer>
-              <SocialLink href="https://facebook.com">
-                <FacebookIcon />
-              </SocialLink>
-              <SocialLink href="https://twitter.com">
-                <TwitterIcon />
-              </SocialLink>
-              <SocialLink href="https://youtube.com">
-                <YoutubeIcon />
-              </SocialLink>
-            </SocialLinksContainer>
+          </CompanyColumn>
+          <CompanyColumn>
+            <ColumnHeading>Correspondence</ColumnHeading>
+            <CompanyAddress>
+            <span>
+                <p>
+                  Kama Ltd.,
+                </p>
+                <p>
+                  P.O.Box 110
+                </p>
+                <p>
+                  Azor 5819002
+                </p>
+                <p>
+                  Israel
+                </p>
+              </span>
+            </CompanyAddress>
           </CompanyColumn>
           <Column>
             <ColumnHeading>Quick Links</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Blog</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">FAQs</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Support</Link>
-              </LinkListItem>
-              <LinkListItem>
                 <Link href="#">About Us</Link>
               </LinkListItem>
-            </LinkList>
-          </Column>
-          <Column>
-            <ColumnHeading>Product</ColumnHeading>
-            <LinkList>
               <LinkListItem>
-                <Link href="#">Log In</Link>
+                <Link href="#">Manufacturers</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Personal</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Business</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Team</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column>
-          <Column>
-            <ColumnHeading>Legal</ColumnHeading>
-            <LinkList>
-              <LinkListItem>
-                <Link href="#">GDPR</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Privacy Policy</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Terms of Service</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Disclaimer</Link>
+                <Link href="#">ContactUs</Link>
               </LinkListItem>
             </LinkList>
           </Column>
@@ -122,16 +98,13 @@ export default () => {
             <ColumnHeading>Contact</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                +1 (234) (567)-8901
+                +972-(0)3-5567747
               </LinkListItem>
               <LinkListItem>
-                <Link href="mailto:support@servana.com">support@servana.com</Link>
+                <Link href="mailto:kama@kama.org.il?subject=via Kama Website">kama@kama.org.il</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Sales</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Report Abuse</Link>
+                +972-(0)3-5567548
               </LinkListItem>
             </LinkList>
           </Column>

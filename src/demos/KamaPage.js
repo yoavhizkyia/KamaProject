@@ -15,13 +15,14 @@ import FAQ from "components/faqs/SimpleWithSideImage.js";
 import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import customerSupportIllustrationSrc from "images/customer-support-illustration.svg";
+import FiveColumnDark from "components/footers/FiveColumnDark";
 
 const aboutDescription = 'Our mission is to serve our customers with providing the best possible engineering and field service and supply of the highest quality instruments to meet the needs of our customers in Chemical, Petrochemical, Power, Food & Beverage, Pharmaceutical and other Process Industries.\n\
 KAMA Ltd. is a leading supplier of flow meters, control valves, level, pressure and temperature instruments, IS barriers and proximity switches, etc.\n\
 Our principals are world wide leaders in their respective field of manufacturing.\n\
 Our team boasts a combined experience of more than 100 man-years in control instrumentation.'
 
-const card = [
+const ourTeamCards = [
     {
         name: 'Azriel Kutasov', 
         position: 'President',
@@ -73,6 +74,7 @@ export default () => (
   <AnimationRevealPage>
     <Hero />
     <MainFeature description={aboutDescription} />
-    <ContactUs subheading="Contact Us" heading="Our Team" cards={card} />
+    <ContactUs subheading="Contact Us" heading="Our Team" cards={ourTeamCards} />
+    <FiveColumnDark />
   </AnimationRevealPage>
 );
