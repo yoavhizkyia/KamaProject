@@ -117,8 +117,8 @@ export default function App() {
       <GlobalStyles />
       <Router>
         <Routes>
-          {/* <Route path="/" element={<KamaPage />} /> */}
-          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
+          <Route path="/" element={<KamaPage />} />
+          {/* <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} /> */}
           {/* <Route path="/components/:type/:name" element={<ComponentRenderer />} /> */}
           {/* <Route path="/thank-you" element={<ThankYouPage />} /> */}
         </Routes>

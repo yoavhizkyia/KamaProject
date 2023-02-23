@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import LogoImage from "images/kamafavicon.ico";
+import { handleClickScroll } from "components/hero/FullWidthWithImage";
 
 const Container = tw.div`relative bg-gray-200 text-gray-700 -mx-8 -mb-8 px-8`;
 const Content = tw.div`max-w-screen-xl mx-auto pt-16 pb-8`
@@ -84,13 +85,13 @@ export default () => {
             <ColumnHeading>Quick Links</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">About Us</Link>
+                <Link onClick={() => handleClickScroll('aboutUs')}>About Us</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Manufacturers</Link>
+                <Link>Manufacturers</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">ContactUs</Link>
+                <Link onClick={() => handleClickScroll('contact')}>ContactUs</Link>
               </LinkListItem>
             </LinkList>
           </Column>

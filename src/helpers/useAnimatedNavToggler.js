@@ -8,7 +8,7 @@ export default function useAnimatedNavToggler() {
   const animation = useAnimation();
 
   const toggleNavbar = () => {
-    setShowNavLinks(!showNavLinks);
+    setShowNavLinks(prev => !prev);
     animation.start({ x: x, display: "block" });
     cycleX();
   };

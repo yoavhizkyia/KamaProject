@@ -30,12 +30,20 @@ const Content = tw.div`mt-24 lg:mt-24 lg:mb-24 flex flex-col sm:items-center lg:
 const Heading = tw.h1`text-3xl sm:text-5xl md:text-6xl lg:text-5xl font-black leading-none text-primary-500`;
 const Paragraph = tw.p`max-w-md my-8 lg:my-5 lg:my-8 sm:text-lg lg:text-base xl:text-lg leading-loose text-primary-500`;
 
+export const handleClickScroll = (elementId) => {
+  const element = document.getElementById(elementId);
+  if (element) {
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export default ({
   navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/aboutus">About</NavLink>
-      <NavLink href="#">Manufacturers</NavLink>
-      <NavLink href="/contact">Contact</NavLink>
+      <NavLink onClick={() => handleClickScroll('aboutUs')}>About</NavLink>
+      <NavLink href="/" >Manufacturers</NavLink>
+      <NavLink onClick={() => handleClickScroll('contact')}>Contact</NavLink>
       {/* <NavLink href="#">News</NavLink> */}
     </NavLinks>
   ],

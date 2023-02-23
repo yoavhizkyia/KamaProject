@@ -52,7 +52,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 export default ({ cards = null, heading = "Our Offices", subheading = "Locations" }) => {
 
 return (
-  <Container>
+  <Container id={'contact'}>
       <ThreeColumnContainer>
       {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading>
