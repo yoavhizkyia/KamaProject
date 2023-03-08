@@ -38,7 +38,7 @@ const DecoratorBlob = styled(SvgDotPattern)(props => [
 ]);
 
 export default ({
-  subheading = "Our Track Record",
+  subheading = "Our Track Record ",
   heading = (
     <>
       We have been doing this <wbr /> since <span tw="text-secondary-500">1980.</span>
